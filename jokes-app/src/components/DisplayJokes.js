@@ -1,4 +1,5 @@
 import React from 'react'
+import '../App.css';
 
 const DisplayJokes = ({result}) =>{
     var jokes=[];
@@ -14,13 +15,11 @@ const DisplayJokes = ({result}) =>{
     console.log(items);
     return(
         <div className="output">
-            <h1>Hello</h1>
-        <ul>
-            {items.map((data) =>{
-                <li>{data}</li>
-            })}
-            <li>Hello</li>
-        </ul>
+            <ul>
+                {items.map((data) =>(
+                    <li key={data}>{data}</li>
+                ))}
+            </ul>
         </div>
     )
 }
