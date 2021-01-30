@@ -38,6 +38,7 @@
   border: 2px solid #000000;
   border-radius: 10px;
   font-family: 'Rubik', sans-serif;
+  cursor: pointer;
 }
 .output{
   position: fixed;
@@ -52,7 +53,11 @@
   font-family: 'Lora', serif;
   overflow: scroll;
 }
+.output ul{
+  list-style: none;
+}
 .output ul li{
-  padding: 5px 0px;
+  padding: 8px 0px;
+  border-bottom: 1px solid #ffffff;
 }
 
