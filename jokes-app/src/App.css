@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 .App {
   text-align: center;
   min-height: 100vh;
@@ -15,4 +19,40 @@
   font-size: 40px;
   margin: 20px 0px;
   font-weight: bold;
+  padding: 20px;
+  font-family: 'Londrina Solid', cursive;
 }
+.button{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button .btn{
+  padding: 10px 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  font-family: 'Rubik', sans-serif;
+}
+.output{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 40rem;
+  height: 30rem;
+  border: 5px solid #ffffff;
+  margin-top: 5rem;
+  padding: 20px;
+  font-family: 'Lora', serif;
+  overflow: scroll;
+}
+.output ul li{
+  padding: 5px 0px;
+}
+
