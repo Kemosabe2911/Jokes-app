@@ -32,6 +32,14 @@ function App() {
           <DisplayJokes result={result} />
         </div>
       </div>
+      <div className="theme-switch-wrapper">
+        <label className="theme-switch-handler">
+          <div className="switch-path">
+            <div className="switch-handle">
+            </div>
+          </div>
+        </label>
+      </div>
     </div>
   );
 }
