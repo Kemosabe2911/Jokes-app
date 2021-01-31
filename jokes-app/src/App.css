@@ -63,6 +63,8 @@
   border-bottom: 1px solid #ffffff;
 }
 
+/*Theme Colors*/
+
 .light-mode {
   background-color: #fff;
   color: #000000;
@@ -118,6 +120,9 @@
   border-color: #000000;
 }
 
+.dark-mode body{
+  background-color: #000000;
+}
 
 nav{
   position: fixed;

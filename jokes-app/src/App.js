@@ -4,9 +4,11 @@ import axios from 'axios';
 import DisplayJokes from './components/DisplayJokes'
 
 function App() {
+  //Initialize result, darkMode states
   const [result,setResult] = useState([]);
   const [darkMode, setDarkMode] = React.useState(getInitialMode());
   
+  //Save in localstorage
   React.useEffect(() => {
     localStorage.setItem("dark", JSON.stringify(darkMode));
   }, [darkMode]);
@@ -28,12 +30,14 @@ function App() {
     // return savedMode || false;
   }
 
+  //function to get prefered color
   function getPrefColorScheme() {
     if (!window.matchMedia) return;
 
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
 
+  //fetch data from api 10 times
   const getrandomJokes = () =>{
     let temp =[];
     for(let i=1; i<=10; i++){
