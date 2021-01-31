@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
-.App {
+
+
+.App{
   text-align: center;
   min-height: 100vh;
   color: #ffffff;
@@ -61,3 +63,126 @@
   border-bottom: 1px solid #ffffff;
 }
 
+.light-mode {
+  background-color: #fff;
+  color: #000000;
+  transition: background-color 0.25s ease-out;
+}
+
+
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+.light-mode .button .btn{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .button .btn{
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+.dark-mode .App{
+  background-color: #000000;
+  color: #fff;
+}
+
+.light-mode .App{
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+.dark-mode .output{
+  background-color: #000000;
+  color: #fff;
+  border-color: #fff;
+}
+
+.light-mode .output{
+  background-color: #fff;
+  color: #1a1a1a;
+  border-color: #000000;
+}
+.dark-mode .output ul li{
+  background-color: #000000;
+  color: #fff;
+  border-color: #fff;
+}
+
+.light-mode .output ul li{
+  background-color: #fff;
+  color: #1a1a1a;
+  border-color: #000000;
+}
+
+
+nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 40px;
+}
+.toggle {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"].checkbox {
+  width: 40px;
+  height: 10px;
+  background: #555;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+}
+
+input[type="checkbox"].checkbox:checked + label {
+  left: 30px;
+}
+
+input[type="checkbox"].checkbox:focus-visible {
+  outline: solid 2px white;
+}
+
+input[type="checkbox"].checkbox + label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  left: 2px;
+  background: #fff;
+  opacity: 0.9;
+  background-color: cyan;
+}
+
+.toggle-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.toggle-container > span {
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+
+.toggle-container > span:last-child {
+  margin-top: 5px;
+}
